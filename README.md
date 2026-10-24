@@ -6,7 +6,7 @@ A terminal game where you guess a number from 1 to 100 in 7 tries
 - The computer picks a number from 1 to 100.
 - You have 7 tries. After each guess you get "Higher" or "Lower".
 - Invalid input doesn't cost a try.
-- Press r to play again.
+- Press r to retry, any other key to quit.
 
 ## Setup
 ```bash
