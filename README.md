@@ -1,7 +1,6 @@
 # Guessing Game
 
-It is a simple guessing game where you have to guess a number between 1 and 100. You only have 7 tries so use your guesses smartly.
-Have Fun!!
+A terminal game where you guess a number from 1 to 100 in 7 tries
 
 ## How to play
 - The computer picks a number from 1 to 100.
