@@ -10,6 +10,7 @@ A terminal game where you guess a number from 1 to 100 in 7 tries
 
 ## Setup
 ```bash
+mkdir guessing-game && cd guessing-game
 curl -O https://raw.githubusercontent.com/Kad1V/python-practice/main/guessing_game.py
 python3 -m venv .venv
 source .venv/bin/activate
