@@ -15,7 +15,6 @@ curl -O https://raw.githubusercontent.com/Kad1V/python-practice/main/guessing_ga
 python3 -m venv .venv
 source .venv/bin/activate
 pip install readchar
-python guessing_game.py
 ```
 
 ## Run
