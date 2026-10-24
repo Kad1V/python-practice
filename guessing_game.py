@@ -1,4 +1,5 @@
 import random
+import readchar
 
 
 def check_guess(guess, secret, tries):
@@ -39,6 +40,7 @@ while True:
         print("Oops, you lose.")
         print(f"The number was {secret}.")
 
-    retry = input("Press r to retry or press any other key to quit. ").lower().strip()
+    print("Press r to retry or press any other key to quit. ")
+    retry = readchar.readkey().lower()
     if retry != "r":
         break
