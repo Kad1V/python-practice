@@ -1,6 +1,7 @@
 # Guessing Game
 
-One sentence: what it is and what it does.
+It is a simple guessing game where you have to guess a number between 1 and 100. You only have 7 tries so use your guesses smartly.
+Have Fun!!
 
 ## How to play
 - The computer picks a number from 1 to 100.
