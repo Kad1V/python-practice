@@ -11,11 +11,11 @@ Have Fun!!
 
 ## Setup
 ```bash
-git clone <your-repo-url>
-cd python-practice
+curl -O https://raw.githubusercontent.com/Kad1V/python-practice/main/guessing_game.py
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install readchar
+python guessing_game.py
 ```
 
 ## Run
