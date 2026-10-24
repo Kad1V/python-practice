@@ -6,7 +6,7 @@ for i in range(1, 8):
     guess = int(input("Enter your guess: "))
     if guess == secret:
         print("Congratulations you win!!")
-        print(f"Your score is {i}.")
+        print(f"Your score is {7-i}.")
         break
     elif guess > secret:
         print("Lower!!")
