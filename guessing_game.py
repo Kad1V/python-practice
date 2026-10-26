@@ -2,7 +2,7 @@ import random
 import readchar
 
 
-def check_guess(guess, secret):
+def check_guess(guess: int, secret: int) -> str:
     if guess == secret:
         return "Win"
     elif guess > secret:
