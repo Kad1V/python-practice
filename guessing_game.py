@@ -11,6 +11,19 @@ def check_guess(guess: int, secret: int) -> str:
         return "Low"
 
 
+def get_guess() -> int | None:
+    try:
+        guess = int(input("Guess a number between 1 and 100: "))
+    except ValueError:
+        print("Enter a Valid Guess.")
+        return None
+    if not 1 <= guess <= 100:
+        print("!!Number must be between 1 and 100!!")
+        return None
+
+    return guess
+
+
 def main():
     while True:
         secret = random.randint(1, 100)
@@ -18,13 +31,8 @@ def main():
         won = False
 
         while tries < 7:
-            try:
-                guess = int(input("Guess a number between 1 and 100: "))
-            except ValueError:
-                print("Enter a Valid Guess.")
-                continue
-            if not 1 <= guess <= 100:
-                print("!!Number must be between 1 and 100!!")
+            guess = get_guess()
+            if guess is None:
                 continue
             tries += 1
             guess_is = check_guess(guess, secret)
