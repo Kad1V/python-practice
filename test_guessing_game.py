@@ -9,7 +9,7 @@ def test_invalid_guess(monkeypatch):
 
 
 def test_out_of_range(monkeypatch):
-    monkeypatch.setattr("builtins.input", lambda _: 150)
+    monkeypatch.setattr("builtins.input", lambda _: "150")
     result = get_guess()
     assert result is None
 
