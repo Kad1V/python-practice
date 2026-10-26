@@ -2,16 +2,13 @@ import random
 import readchar
 
 
-def check_guess(guess, secret, tries):
+def check_guess(guess, secret):
     if guess == secret:
-        return True
+        return "Win"
     elif guess > secret:
-        print("Lower!!")
-        print(f"You have {7-tries} tries left.")
+        return "High"
     else:
-        print("Higher!!")
-        print(f"You have {7-tries} tries left.")
-    return False
+        return "Low"
 
 
 while True:
@@ -29,9 +26,14 @@ while True:
             print("!!Number must be between 1 and 100!!")
             continue
         tries += 1
-        if check_guess(guess, secret, tries):
+        guess_is = check_guess(guess, secret)
+        if guess_is == "Win":
             won = True
             break
+        elif guess_is == "High":
+            print("Lower!!")
+        else:
+            print("Higher!!")
 
     if won:
         print("Congratulations you win!!")
