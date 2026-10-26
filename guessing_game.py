@@ -32,9 +32,10 @@ while True:
             break
         elif guess_is == "High":
             print("Lower!!")
+            print(f"You have {7-tries} tries left.")
         else:
             print("Higher!!")
-
+            print(f"You have {7-tries} tries left.")
     if won:
         print("Congratulations you win!!")
         print(f"Your score is {7-tries+1}.")
