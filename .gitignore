@@ -2,3 +2,4 @@ __pycache__/
 *.py[cod]
 .venv/
 to_do.json
+.pytest_cache/
